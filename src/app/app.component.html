@@ -1,13 +1,11 @@
 <div id="header">Automation server</div>
 
 <div class="content">
-  <div class="colors"><a href="javascript:void(0)" class="default"> </a><a href="javascript:void(0)" class="blue"> </a><a href="javascript:void(0)"
-      class="white"></a></div>
   <nav>
     <div id="menu" class="menu">
       <div class="menu-header"> MENU </div>
       <ul>
-        <li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+        <li (click)="handle()" class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
         <li><a href="#"><i class="fa fa-file-image-o"> </i>Gallery</a>
           <ul class="submenu">
             <li><a href="#"> Graphics</a></li>
@@ -34,10 +32,4 @@
     </div>
   </nav>
 </div>
-
-<button (click)="toggleTitle()"> clickhere</button>
-<h1 class="title" style="display:none">
-  {{title}}
-</h1>
-
 <div class="footer"> <strong>@copy 2017 Automation server.</strong></div>
